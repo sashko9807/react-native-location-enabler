@@ -53,6 +53,15 @@ class LocationEnablerModule(reactContext: ReactApplicationContext) : ReactContex
     return constants
   }
 
+fun addListener(type: String?) {
+    // Keep: Required for RN built in Event Emitter Calls.
+}
+
+@ReactMethod
+fun removeListeners(type: Int?) {
+    // Keep: Required for RN built in Event Emitter Calls.
+}
+
   @ReactMethod
   fun checkSettings(config: ReadableMap) {
     extractArgs(config)
